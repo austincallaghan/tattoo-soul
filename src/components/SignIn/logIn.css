@@ -1,0 +1,30 @@
+.sign-in--container {
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.sign-in--container input,
+.sign-in--container button {
+  background: white;
+  border: none;
+  border-bottom: black 2px solid;
+  padding: 0px;
+  padding-bottom: 5px;
+  margin: 9px;
+  font-size: 16px;
+  width: 140px;
+  text-align: left;
+
+  color: black;
+}
+.sign-in--socials {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.sign-in--socials button {
+  padding: 0px;
+  padding-bottom: 5px;
+  text-align: left;
+}

@@ -1,0 +1,91 @@
+.landing--container {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+  background: black;
+}
+
+.landing--black {
+  width: 50%;
+  height: calc(100vh - 100px);
+  background: black;
+}
+
+.landing--banner {
+  width: 50%;
+}
+
+.landing--banner img {
+  width: 100%;
+}
+
+.landing--banner::after {
+  display: block;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 1)),
+    color-stop(31%, rgba(255, 255, 255, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 31%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 31%
+  );
+  height: 97.7vh;
+  width: 50%;
+  content: '';
+  top: 100px;
+  position: absolute;
+}
+
+.landing--center-form {
+  position: absolute;
+  color: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 35%;
+  padding: 30px;
+  width: 35%;
+}
+.landing--center-form h1 {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.landing--interactives {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.landing--interactives input {
+  height: 50px;
+  width: 60%;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 14px;
+  margin-right: 26px;
+}
+
+.landing--interactives div {
+  text-align: center;
+  line-height: 50px;
+  width: 40%;
+  height: 50px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 16px;
+  margin-right: 26px;
+}

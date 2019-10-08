@@ -1,0 +1,79 @@
+.crop-modal--container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 50%;
+  width: 80%;
+  top: 10%;
+  box-shadow: 0 0 0 9999em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.crop-modal--dialogue {
+  height: 100px;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crop-modal--aspects {
+  display: flex;
+  align-items: center;
+}
+
+.crop-modal--aspects > * {
+  border: 1px solid black;
+  height: 40px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.crop-modal--cta {
+  display: flex;
+  border: 1px solid black;
+  height: 40px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.crop-modal--temp {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.crop-modal--back-nav {
+  color: white;
+  z-index: 4;
+  position: relative;
+  /* margin-left: 30px; */
+}
+
+.crop-modal--back-nav i {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.crop-modal--choose-file {
+  height: 70%;
+}
+
+.crop-modal--choose-file label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}

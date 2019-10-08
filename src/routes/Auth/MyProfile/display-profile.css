@@ -1,0 +1,193 @@
+.display-profile--container {
+  display: flex;
+  padding-left: 70px;
+  padding-top: 70px;
+  justify-content: space-between;
+  height: calc(100vh - 170px);
+  flex-wrap: wrap;
+}
+
+.display-profile--styles {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.display-profile--description {
+  width: 600px;
+}
+
+.display-profile--basic-info h1 {
+  font-size: 55px;
+  margin: 0;
+}
+
+.display-profile--basic-info i {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.display-profile--basic-info h2 {
+  margin: 40px 0 10px;
+}
+
+.display-profile--upload {
+  margin: 40px 0;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.display-profile--favorites {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 50px 0;
+}
+.display-profile--favorites > i {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.display-profile--picture {
+  max-width: 500px;
+  width: 50%;
+}
+.display-profile--picture img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.display-profile--ratio-container {
+  display: flex;
+  padding: 0px 20px;
+}
+
+.display-profile--formVisible-modal {
+  background: white;
+  display: flex;
+  align-items: center;
+  min-width: 600px;
+  min-height: 500px;
+  max-width: 700px;
+  max-height: 1000px;
+  font-weight: bold;
+  flex-direction: column;
+  top: 100px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  box-shadow: 0 0 0 9999em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.display-profile--formVisible-modal img {
+  height: 200px;
+}
+
+.tattoo-form--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.tattoo-form--container input {
+  border: none;
+  border-bottom: black 3px solid;
+  font-size: 16px;
+  padding: 20px 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tattoo-form--single-row {
+  width: 100%;
+}
+
+.tattoo-form--single-row input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.tattoo-form--row {
+  width: 45%;
+  text-align: start;
+}
+
+.tattoo-form--container h3 {
+  margin: 0;
+}
+
+.tattoo-form--column {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-profile--formVisible-modal__nav {
+  min-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 30px;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+}
+
+.tattoo-form--img-container {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.tattoo-form--img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.tattoo-form--styles-container {
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.tattoo-form--styles-container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border: 1px solid rgb(41, 41, 41);
+  font-weight: 600;
+  height: 30px;
+  font-size: 14px;
+  padding: 0 6px;
+}
+
+.active {
+  background: rgb(241, 241, 241);
+}
+
+.tattoo-form--submit {
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  height: 67px;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 17px;
+}
+
+.tattoo-form--submit i {
+  padding-left: 6px;
+}
+
+.tattoo-form--container form {
+  padding: 20px 40px;
+}

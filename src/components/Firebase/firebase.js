@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
+import 'firebase/storage';
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -24,6 +25,7 @@ class Firebase {
 
     this.auth = app.auth();
     this.db = app.firestore();
+    this.storage = app.storage();
 
     /* Social Sign In Method Provider */
 
@@ -95,8 +97,16 @@ class Firebase {
   // *** User API ***
 
   user = uid => this.db.doc(`users/${uid}`);
+  tattoo = tattoo_id => this.db.doc(`tattoos/${tattoo_id}`);
 
+  tattoos = () => this.db.collection('tattoos');
   users = () => this.db.collection('users');
+  userProfile = uid => this.db.collection('users').doc(uid);
+
+  // *** Profile API ***
+
+  // userProfile = uid => this.db.doc(`users/${uid}`);
+  // artistProfile = uid => this.db.doc(`users/${uid}`);
 
   // *** Message API ***
 

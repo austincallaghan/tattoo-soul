@@ -50,6 +50,7 @@ class SignUpFormBase extends Component {
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
         // Create a user in your Firebase realtime database
+        console.log(authUser);
         return this.props.firebase.user(authUser.user.uid).set(
           {
             username,
@@ -60,12 +61,11 @@ class SignUpFormBase extends Component {
         );
       })
       .then(() => {
+        this.setState({ ...INITIAL_STATE });
+        this.props.history.push('/home');
         return this.props.firebase.doSendEmailVerification();
       })
-      .then(() => {
-        this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.HOME);
-      })
+
       .catch(error => {
         if (error.code === ERROR_CODE_ACCOUNT_EXISTS) {
           error.message = ERROR_MSG_ACCOUNT_EXISTS;

@@ -1,0 +1,94 @@
+.edit-profile--container {
+  padding: 70px;
+}
+
+.checkbox input[type='checkbox'] {
+  opacity: 0;
+  padding: 20px 0px 20px;
+}
+
+.checkbox {
+  padding: 6px 0px 6px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.edit-profile--container h1 {
+  margin: 0;
+  font-size: 55px;
+}
+
+.edit-profile--checkbox-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.edit-profile--update-complete {
+  border: 1px black solid;
+  background: #f1f1f1;
+  width: 180px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-profile--update-complete span {
+  font-size: 20px;
+}
+
+.edit-profile--submit:active,
+.edit-profile--upload:active,
+.edit-profile--cancel:active {
+  background: rgb(240, 240, 240);
+}
+
+.edit-profile--upload,
+.edit-profile--submit,
+.edit-profile--cancel {
+  margin: 40px 0;
+  width: 230px;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 0;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+}
+
+.edit-profile--submit {
+  border: none;
+  border-bottom: black 2px solid;
+  width: 120px;
+}
+
+.edit-profile--cancel {
+  width: 120px;
+}
+.edit-profile--cancel i {
+  margin-right: 6px;
+}
+
+.edit-profile--submit i {
+  margin-left: 6px;
+}
+
+.edit-profile--upload:hover,
+.edit-profile--submit:hover,
+.edit-profile--cancel:hover {
+  box-shadow: 0px 0px 40px rgba(0, 0, 80, 0.05);
+}
+
+.edit-profile--textarea {
+  border: none;
+  font-size: 16px;
+  width: 600px;
+  border-bottom: 2px solid black;
+}
+
+.edit-profile--cta {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+}
